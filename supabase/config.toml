@@ -1,2 +1,5 @@
 [functions.create-employee]
 verify_jwt = false
+
+[functions.username-login]
+verify_jwt = false
