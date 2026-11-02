@@ -57,6 +57,18 @@ Deno.serve(async (req) => {
       await admin.auth.admin.deleteUser(created.user.id);
       throw insertError;
     }
+
+    const { error: aliasError } = await admin.from("auth_login_aliases").insert({
+      username,
+      auth_user_id: created.user.id,
+      auth_email: email,
+    });
+    if (aliasError) {
+      await admin.from("profiles").delete().eq("id", created.user.id);
+      await admin.auth.admin.deleteUser(created.user.id);
+      throw aliasError;
+    }
+
     return new Response(JSON.stringify({ id: created.user.id, username, name: displayName }), { status: 200, headers: { ...cors, "Content-Type": "application/json" } });
   } catch (error) {
     return new Response(JSON.stringify({ error: error instanceof Error ? error.message : "Unexpected server error." }), { status: 400, headers: { ...cors, "Content-Type": "application/json" } });
