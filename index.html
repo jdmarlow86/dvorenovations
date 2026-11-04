@@ -77,7 +77,7 @@ document.querySelectorAll('[data-edit-job]').forEach(b=>b.onclick=()=>jobForm(db
 document.querySelectorAll('[data-delete-job]').forEach(b=>b.onclick=()=>{if(confirm('Delete this job? Existing time and invoice history will remain.')){db.jobs=db.jobs.filter(j=>j.id!==b.dataset.deleteJob);save();render()}});
 document.querySelectorAll('[data-reset-user]').forEach(b=>b.onclick=()=>resetUser(b.dataset.resetUser));
 document.querySelectorAll('[data-remove-user]').forEach(b=>b.onclick=()=>{let u=db.users.find(x=>x.id===b.dataset.removeUser);u.active=!u.active;save();render()});
-document.querySelectorAll('[data-message-user]').forEach(b=>messageForm(b.dataset.messageUser));
+document.querySelectorAll('[data-message-user]').forEach(b=>b.onclick=()=>messageForm(b.dataset.messageUser));
 document.querySelectorAll('[data-view-invoice]').forEach(b=>viewInvoice(b.dataset.viewInvoice));
 document.querySelectorAll('[data-report]').forEach(b=>report(b.dataset.report));
 let pf=$('#password-form');if(pf)pf.onsubmit=changePassword;
