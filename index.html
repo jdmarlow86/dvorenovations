@@ -79,7 +79,7 @@ document.querySelectorAll('[data-reset-user]').forEach(b=>b.onclick=()=>resetUse
 document.querySelectorAll('[data-remove-user]').forEach(b=>b.onclick=()=>{let u=db.users.find(x=>x.id===b.dataset.removeUser);u.active=!u.active;save();render()});
 document.querySelectorAll('[data-message-user]').forEach(b=>b.onclick=()=>messageForm(b.dataset.messageUser));
 document.querySelectorAll('[data-view-invoice]').forEach(b=>viewInvoice(b.dataset.viewInvoice));
-document.querySelectorAll('[data-report]').forEach(b=>report(b.dataset.report));
+document.querySelectorAll('[data-report]').forEach(b=>b.onclick=()=>report(b.dataset.report));
 let pf=$('#password-form');if(pf)pf.onsubmit=changePassword;
 let rf=$('#restore-file');if(rf)rf.onchange=restore;
 }
