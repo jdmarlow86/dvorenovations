@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#17251f">
+<meta name="description" content="Contact Van Ornum Renovations in Luttrell, Tennessee to discuss your renovation project.">
+<title>Van Ornum Renovations | Luttrell, Tennessee</title>
+<style>
+:root{--forest:#17251f;--green:#244b3b;--green2:#376b52;--gold:#bd9657;--cream:#f2f3ef;--paper:#fff;--ink:#202a25;--muted:#68736c;--line:#dce2dc;--shadow:0 18px 55px #14251b14}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:inherit}
+.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+header{background:var(--forest);color:#f7f6ef;border-bottom:3px solid var(--gold)}
+.header-inner{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:13px;text-decoration:none}
+.mark{width:46px;height:46px;border:1px solid var(--gold);border-radius:12px;display:grid;place-items:center;color:#e2c58f;font:26px Georgia,serif}
+.brand strong{display:block;font:700 20px/1.2 Georgia,serif}
+.brand small{display:block;color:#c6d0c8;font-size:10px;letter-spacing:2px;margin-top:4px}
+nav{display:flex;align-items:center;gap:26px}
+nav a{color:#e8eee9;text-decoration:none;font-weight:600;font-size:14px}
+nav a:hover{color:#e2c58f}
+.nav-cta,.button{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:12px 19px;border-radius:9px;background:var(--green2);color:white;text-decoration:none;font-weight:700;border:1px solid transparent;transition:.2s}
+.nav-cta:hover,.button:hover{background:#477d60;transform:translateY(-1px)}
+.hero{background:linear-gradient(112deg,#17251f 0%,#203c30 65%,#315542 100%);color:#f7f6ef;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:440px;height:440px;border:1px solid #bd965733;border-radius:50%;right:-90px;top:-170px;box-shadow:0 0 0 35px #bd965711,0 0 0 75px #bd96570b}
+.hero-inner{position:relative;z-index:1;max-width:760px;padding:94px 0 104px}
+.eyebrow{color:#dfbd7d;text-transform:uppercase;letter-spacing:2.7px;font-size:11px;font-weight:800}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif}
+h1{font-size:clamp(42px,7vw,68px);line-height:1.04;letter-spacing:-1.7px;margin:17px 0 20px;font-weight:700}
+.hero p{font-size:18px;line-height:1.75;color:#d8e1da;max-width:620px;margin:0 0 28px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.button.gold{background:var(--gold);color:#17251f}
+.button.outline{background:transparent;border-color:#8ea194;color:#fff}
+.button.outline:hover{background:#ffffff12}
+.trust-strip{background:#fff;border-bottom:1px solid var(--line)}
+.trust-inner{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:21px 0}
+.trust-item{display:flex;align-items:center;gap:12px}
+.trust-icon{width:38px;height:38px;flex:0 0 38px;border-radius:10px;background:#eaf0eb;color:var(--green);display:grid;place-items:center;font-size:18px}
+.trust-item strong{display:block;font-size:13px}
+.trust-item span{display:block;color:var(--muted);font-size:12px}
+section{padding:78px 0}
+.section-heading{max-width:660px;margin-bottom:30px}
+.section-heading h2{font-size:clamp(30px,4vw,42px);line-height:1.15;margin:9px 0 13px}
+.section-heading p{color:var(--muted);margin:0}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about-panel{background:var(--forest);color:#f4f4ed;padding:34px;border-radius:16px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.about-panel:after{content:"⌂";position:absolute;right:20px;bottom:-50px;color:#ffffff0b;font:210px Georgia,serif}
+.about-panel h3{font-size:29px;line-height:1.2;margin:0 0 14px;position:relative;z-index:1}
+.about-panel p{color:#d0dbd2;position:relative;z-index:1;margin:0}
+.about-copy p{color:var(--muted)}
+.about-copy .section-heading{margin-bottom:14px}
+.values{display:grid;gap:12px;margin-top:22px}
+.value{display:flex;gap:12px;align-items:flex-start}
+.value b{color:var(--green)}
+.value-mark{color:var(--gold);font-size:19px;line-height:1.3}
+.contact{background:#e9ede8}
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:40px;align-items:start}
+.contact-info{background:var(--forest);color:#f5f5ed;padding:30px;border-radius:15px}
+.contact-info h3{font-size:28px;margin:0 0 10px}
+.contact-info>p{color:#d0dbd2;margin:0 0 25px}
+.contact-line{padding:15px 0;border-top:1px solid #ffffff22}
+.contact-line small{display:block;color:#b9c9bd;font-size:11px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700}
+.contact-line a,.contact-line address{font-style:normal;color:#fff;text-decoration:none;font-weight:600;overflow-wrap:anywhere}
+.contact-line a:hover{color:#e2c58f}
+.form-card{background:#fff;padding:30px;border:1px solid var(--line);border-radius:15px;box-shadow:var(--shadow)}
+.form-card h3{font-size:27px;margin:0 0 5px}
+.form-card>p{color:var(--muted);font-size:13px;margin:0 0 20px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+label{display:block;font-size:12px;font-weight:750;color:#4d5a51;margin:12px 0 6px}
+input,select,textarea{width:100%;border:1px solid #d8dfd9;border-radius:8px;background:#fbfcfa;color:var(--ink);padding:12px;font:inherit;font-size:14px}
+textarea{min-height:130px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:2px solid #bd965766;border-color:var(--gold)}
+.full{grid-column:1/-1}
+.form-submit{margin-top:17px;width:100%;border:0;cursor:pointer;font:700 15px system-ui}
+.form-note{font-size:11px;color:var(--muted);margin-top:12px}
+.hp{position:absolute;left:-5000px}
+footer{background:#111d18;color:#c9d3cb;padding:27px 0}
+.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}
+footer strong{font:700 17px Georgia,serif;color:#fff}
+footer small{font-size:12px}
+@media(max-width:760px){.header-inner{padding:15px 0;align-items:flex-start;flex-direction:column;gap:14px}nav{width:100%;gap:18px;flex-wrap:wrap}nav a{font-size:13px}.hero-inner{padding:72px 0 78px}.trust-inner{grid-template-columns:1fr;gap:14px}.about-grid,.contact-grid{grid-template-columns:1fr;gap:24px}section{padding:58px 0}.about-panel{padding:28px}.contact-info,.form-card{padding:24px}}
+@media(max-width:480px){.wrap{width:min(100% - 28px,1120px)}.brand strong{font-size:18px}.hero p{font-size:16px}.form-grid{grid-template-columns:1fr}.full{grid-column:auto}.hero-actions .button{width:100%}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="Van Ornum Renovations home">
+      <span class="mark">⌂</span>
+      <span><strong>Van Ornum Renovations</strong><small>CRAFT · CARE · COMMITMENT</small></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cta" href="#contact">Request a conversation</a>
+    </nav>
+  </div>
+</header>
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="eyebrow">Luttrell · East Tennessee</div>
+      <h1>Thoughtful work.<br>Built with care.</h1>
+      <p>Every renovation starts with a conversation. Tell us what you have in mind, and let's talk about the next steps for your project.</p>
+      <div class="hero-actions">
+        <a class="button gold" href="#contact">Discuss your project <span aria-hidden="true">→</span></a>
+        <a class="button outline" href="tel:+18655569480">Call 865-556-9480</a>
+      </div>
+    </div>
+  </section>
+  <div class="trust-strip">
+    <div class="wrap trust-inner">
+      <div class="trust-item"><span class="trust-icon">⌂</span><div><strong>Locally based</strong><span>Luttrell, Tennessee</span></div></div>
+      <div class="trust-item"><span class="trust-icon">✦</span><div><strong>Personal communication</strong><span>Start with a direct conversation</span></div></div>
+      <div class="trust-item"><span class="trust-icon">✓</span><div><strong>Craft · Care · Commitment</strong><span>The company's guiding values</span></div></div>
+    </div>
+  </div>
+  <section id="about">
+    <div class="wrap about-grid">
+      <div class="about-copy">
+        <div class="section-heading">
+          <div class="eyebrow">About the company</div>
+          <h2>Renovation begins with listening.</h2>
+          <p>Van Ornum Renovations is based in Luttrell, Tennessee. We welcome conversations about your renovation ideas, goals, and the work you are considering.</p>
+        </div>
+        <div class="values">
+          <div class="value"><span class="value-mark">✦</span><div><b>Craft</b><br><span class="muted">Give attention to the work and the details.</span></div></div>
+          <div class="value"><span class="value-mark">✦</span><div><b>Care</b><br><span class="muted">Treat each project and conversation with consideration.</span></div></div>
+          <div class="value"><span class="value-mark">✦</span><div><b>Commitment</b><br><span class="muted">Take the time to understand what the project calls for.</span></div></div>
+        </div>
+      </div>
+      <aside class="about-panel">
+        <div class="eyebrow">Van Ornum Renovations</div>
+        <h3>Your project starts with a conversation.</h3>
+        <p>Share a little about the space, the changes you're considering, and how you'd like to get started. Reach out by phone or use the contact form.</p>
+      </aside>
+    </div>
+  </section>
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <div class="section-heading">
+        <div class="eyebrow">Get in touch</div>
+        <h2>Tell us about your project.</h2>
+        <p>Have a question or want to discuss a renovation? Send a message and include the best way to reach you.</p>
+      </div>
+      <div class="contact-grid">
+        <aside class="contact-info">
+          <h3>Contact details</h3>
+          <p>We'd be glad to hear what you're planning.</p>
+          <div class="contact-line"><small>Phone</small><a href="tel:+18655569480">865-556-9480</a></div>
+          <div class="contact-line"><small>Email</small><a href="mailto:dvanornum68@gmail.com">dvanornum68@gmail.com</a></div>
+          <div class="contact-line"><small>Address</small><address>571 Tazewell Pike<br>Luttrell, TN 37779</address></div>
+          <div class="contact-line"><small>Location</small><a href="https://www.google.com/maps/search/?api=1&query=571+Tazewell+Pike%2C+Luttrell%2C+TN+37779" target="_blank" rel="noopener">View map ↗</a></div>
+        </aside>
+        <div class="form-card">
+          <h3>Send an inquiry</h3>
+          <p>Fill in the details below. Required fields are marked.</p>
+          <form action="https://formsubmit.co/dvanornum68@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New website inquiry - Van Ornum Renovations">
+            <input type="hidden" name="_template" value="table">
+            <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+            <div class="form-grid">
+              <div><label for="name">Your name *</label><input id="name" name="name" autocomplete="name" required maxlength="100"></div>
+              <div><label for="email">Email address *</label><input id="email" name="email" type="email" autocomplete="email" required maxlength="160"></div>
+              <div><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="40"></div>
+              <div><label for="topic">What is this about?</label><select id="topic" name="topic"><option value="Renovation inquiry">Renovation inquiry</option><option value="Request a call">Request a call</option><option value="General question">General question</option><option value="Other">Other</option></select></div>
+              <div class="full"><label for="message">Tell us a little about your project *</label><textarea id="message" name="message" required maxlength="5000" placeholder="What are you considering, and how can we help?"></textarea></div>
+            </div>
+            <button class="button form-submit" type="submit">Send inquiry →</button>
+            <p class="form-note">Your message and contact details will be sent to Van Ornum Renovations by email. Please don't include sensitive personal or payment information.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap footer-inner">
+    <div><strong>Van Ornum Renovations</strong><br><small>Craft · Care · Commitment</small></div>
+    <small>571 Tazewell Pike · Luttrell, TN 37779<br>865-556-9480 · dvanornum68@gmail.com</small>
+    <small>© <span id="year">2026</span> Van Ornum Renovations</small>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
